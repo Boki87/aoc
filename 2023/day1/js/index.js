@@ -5,10 +5,7 @@ const input = fs.readFileSync("input.txt", "utf8").trim().split("\n");
 
 const numbers_arr = []
 
-// loop through each line
 for (const line of input) {
-  //console.log(line)
-
 
   const numbersMap = {
     one: 1,
@@ -24,7 +21,6 @@ for (const line of input) {
 
 
   const regexPatern = new RegExp(Object.keys(numbersMap).join('|'), 'gi')
-  //const regexPatern = new RegExp(`/?=(${Object.keys(numbersMap).join('|')})/`, 'gi')
 
 
   const newLine = line.replace(regexPatern, (match) => {
