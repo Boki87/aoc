@@ -30,7 +30,6 @@ for (const line of input) {
       return numbersMap[match.toLowerCase()] || match
     })
 
-
   const allNumbers = newLine.match(/\d+/g).map(num => {
     if (num.length > 1) {
       return num.split('')
