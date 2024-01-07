@@ -34,11 +34,6 @@ function getPointsForCard(card, cardIdx) {
   });
 }
 
-// for (let [index, card] of cards.entries()) {
-//   const pointsForCard = getPointsForCard(card, index + 1);
-//   console.log(pointsForCard);
-// }
-
 const toProcess = new Array(cards.length).fill(0).map((_, i) => i + 1);
 const seen = {};
 const count = {};
